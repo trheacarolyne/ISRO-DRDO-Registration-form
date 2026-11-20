@@ -1,0 +1,2 @@
+function toggleTheme(){document.body.classList.toggle('dark');localStorage.setItem('isroTheme',document.body.classList.contains('dark')?'dark':'light')}
+document.addEventListener('DOMContentLoaded',()=>{if(localStorage.getItem('isroTheme')==='dark')document.body.classList.add('dark');document.querySelectorAll('.main-nav a').forEach(a=>{if(a.getAttribute('href')===location.pathname.split('/').pop())a.classList.add('active')})});
