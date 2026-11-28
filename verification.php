@@ -9,8 +9,8 @@ $pageTitle='Resident Verification'; include 'includes/header.php';
   <h1>Resident Verification</h1>
     <p>Confirm your residency category to continue through the demonstration process.</p></section>
 <div class="form-panel">
-<?php if($app): ?><div class="success">Application saved successfully. Your application number is <strong>
-  <?= htmlspecialchars($app['application_no']) ?></strong>.</div><div class="panel">
+<?php if($app): ?><div class="success">Application saved successfully. Your application number is
+  <strong> <?= htmlspecialchars($app['application_no']) ?> </strong>.</div><div class="panel">
   <h2>Application Summary</h2>
     <p><strong>Name:</strong> <?= htmlspecialchars($app['full_name']) ?></p>
     <p><strong>Organisation:</strong> <?= htmlspecialchars($app['organisation']) ?></p>
